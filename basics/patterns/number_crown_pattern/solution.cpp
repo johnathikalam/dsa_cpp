@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void pattern(int n){
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j <= i; j++){
+            cout<< j+1;
+        }
+        for (int j = 0; j < 2*(n-i)-2; j++){
+            cout<< " ";
+        }
+        for (int j = 0; j <= i; j++){
+            cout<< i-j+1;
+        }
+        cout<< endl;
+    }
+}
+
+int main(){
+    pattern(6);
+    return 0;
+}
